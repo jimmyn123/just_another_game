@@ -43,13 +43,13 @@ Trivia game with no winners but one loser
 
 *	As a developer, I want to channel my trivia geekiness into a game so I can share my joy with others.
 
-*	As a developer, I want to be able to limit the amount of time the user has to answer a question so I can add an        element of pressure in the game.
+*	As a developer, I want to be able to limit the amount of time the user has to answer a question so I can add an element of pressure in the game.
 
 *	As a developer, I am looking to make a game that is interesting so that users will play it over and over again.
 
 *   As a developer, I want to create a scenario that decreases users points with each question answered incorrectly. 
 
-*   As a developer, I want to create a scenario where users are able to team up and work to get other players out of       the game.
+*   As a developer, I want to create a scenario where users are able to team up and work to get other players out of the game.
 
 ### User
 
@@ -63,5 +63,4 @@ Trivia game with no winners but one loser
 
 *	As a gamer, I am looking for a game that I can play quickly so that I do not always have to invest a lot of time.
 
-*   As a user, I am I am looking for accurate scoring and correct game management. 
-
+*   As a user, I am looking for accurate scoring and correct game management.
