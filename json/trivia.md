@@ -80,31 +80,30 @@ CLASSIC TV
   2) Family Matters - Harriot Widnslow
   3) Bewitched - Daren Stevens
   4) Batman (1966) - Catwoman
-
-  What color was Fred's hat that he got for his birthday?
-  1) Black
+  
+  In Sanford and son, what color was Fred's hat that he got for his birthday?
+  1) Grey
   2) Yellow
-  3) Grey - correct
+  3) Black
   4) Lavender
 
-  Who did Lamont have over to play poker?
-  1) Bubba, Leroy, Skillet
-  2) Rooster, Hucklebuck, Skeeter Matthews - correct
+  In Sanford and son, who did Lamont have over to play poker?
+  1) Rooster, Hucklebuck, Skeeter Matthews
+  2) Bubba, Leroy, Skillet
   3) Melvin,Bubba
   4) Grady and Skillet
 
-  What drink did Fred have with Betty?
-  1) Soda and Ripple
+  In Sanford and Son, what drink did Fred have with Betty?
+  1) Boilermakers
   2) Ripple
-  3) Boilermakers - correct
+  3) Soda and Ripple
   4) Wine
 
-  What was Goldstein?
-  1) American
+  In Sanford and son, what was Goldstein?
+  1) Jewish
   2) Mexican
   3) Puerto Rican
-  4) Jewish - correct
-
+  4) American
 
 FOOD
   Why is foie gras so controversial?
@@ -347,6 +346,12 @@ CARTOONS
   2) The Real Folk Blues
   3) Freckles
   4) Cats on Mars
+
+  What 1999 kids cartoon that aired on PBS kids featured a magical lands of dragons?
+  1) Dragon Tales
+  2) Barney & Friends
+  3) Dragon Ball Z
+  4) Dragon's Domain
 
   Which band's frontman fought a giant mecha Barbra Striesand in an early episode of South Park?
   1) The Cure
