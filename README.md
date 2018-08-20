@@ -47,6 +47,10 @@ Trivia game with no winners but one loser
 
 *	As a developer, I am looking to make a game that is interesting so that users will play it over and over again.
 
+*   As a developer, I want to create a scenario that decreases users points with each question answered incorrectly. 
+
+*   As a developer, I want to create a scenario where users are able to team up and work to get other players out of the game.
+
 ### User
 
 *	As a player who is bad at trivia, I want to be able to make others answer questions, so I can still win the game.
@@ -55,9 +59,11 @@ Trivia game with no winners but one loser
 
 *	As a competitor I want the game to have a mechanic of loss so I can make fun of my friends.
 
-*	As a user, I am looking for a UI that is intuitive and easy to use so I will not have to spend a lot of time learning the game.
+*	As a user, I am looking for a UI that is intuitive and easy to use so I will not have to spend a lot of time           learning the game.
 
 *	As a gamer, I am looking for a game that I can play quickly so that I do not always have to invest a lot of time.
+
+* As a user, I am looking for accurate scoring and correct game management.
 
 ## Project Scope
 
