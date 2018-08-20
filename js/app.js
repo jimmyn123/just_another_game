@@ -7,11 +7,11 @@ var playerForm = document.getElementById('player-form');
 var startButton = document.getElementById('start-button');
 
 var defaultNames = [
-  'Poppinfresh',
-  'Buttercup',
-  'Dead Skunk',
-  'Lady Haha',
-  'Sir Willips Brightslymore',
+  'PoppinFresh',
+  'ButterCup',
+  'DeadSkunk',
+  'LadyHaha',
+  'SirWillipsBrightslymore',
   'Flappy',
   'Snookums',
   'Chauncy'
