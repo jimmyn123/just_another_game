@@ -5,16 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Just Another Game</title>
+  <link rel="stylesheet" href="css/reset.css">
 </head>
 <body>
   <header>
-    <!-- h1 -->
+    <h1>
+      Just Another Game
+    </h1>
   </header>
   <main>
-    <!-- form for adding and naming players -->
+    <h2>
+      How many people are going to be playing today?
+    </h2>
+    <div>
+      <button id="decrement-player-button">-</button>
+      <span id="number-of-players">2</span>
+      <button id="increment-player-button">+</button>
+    </div>
+    <form id="player-form">
+    </form>
+    <button id="start-button">Start The Game!</button>
   </main>
   <footer>
-    <!-- about us link -->
+    <a href="views/about.html">Credits</a>
   </footer>
+  <script src="js/app.js"></script>
 </body>
 </html>
