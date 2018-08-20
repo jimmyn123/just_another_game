@@ -38,15 +38,23 @@ Trivia game with no winners but one loser
 ### Developer
 
 *	As a developer, I want to make a fun game so that users can enjoy themselves.
+
 *	As a developer, I want to make a game that will showcase my skills so that I can apply what I’ve learned.
+
 *	As a developer, I want to channel my trivia geekiness into a game so I can share my joy with others.
+
 *	As a developer, I want to be able to limit the amount of time the user has to answer a question so I can add an element of pressure in the game.
+
 *	As a developer, I am looking to make a game that is interesting so that users will play it over and over again.
 
 ### User
 
 *	As a player who is bad at trivia, I want to be able to make others answer questions, so I can still win the game.
+
 *	As a trivia fanatic, I want to be able to utilize my knowledge so that I can show my prowess.
+
 *	As a competitor I want the game to have a mechanic of loss so I can make fun of my friends.
+
 *	As a user, I am looking for a UI that is intuitive and easy to use so I will not have to spend a lot of time learning the game.
+
 *	As a gamer, I am looking for a game that I can play quickly so that I do not always have to invest a lot of time.
