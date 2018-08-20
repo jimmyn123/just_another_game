@@ -29,6 +29,7 @@ CLASSIC TV
   3) Bewitched - Daren Stevens
   4) Batman (1966) - Catwoman
 
+
 FOOD
   Why is foie gras so controversial?
   1) It's made by force-feeding geese.
@@ -270,6 +271,12 @@ CARTOONS
   2) The Real Folk Blues
   3) Freckles
   4) Cats on Mars
+
+  What 1999 kids cartoon that aired on PBS kids featured a magical lands of dragons?
+  1) Dragon Tales
+  2) Barney & Friends
+  3) Dragon Ball Z
+  4) Dragon's Domain
 
   Which band's frontman fought a giant mecha Barbra Striesand in an early episode of South Park?
   1) The Cure
