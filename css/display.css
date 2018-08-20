@@ -1,4 +1,27 @@
-section {
-  height: 300px;
-  border: 1px solid white;
+.tvSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  background: url('../images/oldTv.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.tvScreen {
+  width: 410px;
+  height: 276px;
+  z-index: -1;
+  position: relative;
+  right: 40px;
+  bottom: 15px;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tvScreen p {
+  color: wheat;
 }
