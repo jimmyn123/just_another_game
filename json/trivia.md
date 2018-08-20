@@ -17,6 +17,58 @@ CLASSIC TV
   3) Supermarket Sweep
   4) Joker's Wild
 
+  Peggy gets a job and finds she is earning more money than Al, What job did she get?
+  1) Cosmetics Salewoman - correct
+  2) Librarian
+  3) Lawyer
+  4) Personal Assistant
+
+  Where does the show take place?
+  1) Memphis
+  2) Texas
+  3) New York
+  4) Chicago - correct
+
+  Does Bud ever move out and go to college?
+  1) No
+  2) Yes - correct
+
+  Where did Will smith move to Bel Air from?
+  1) Texas
+  2) California
+  3) Philadelphia - correct
+  4) Florida
+
+  Carlton was famous for being?
+  1) Fat
+  2) Thin
+  3) Tall
+  4) Short - correct
+
+  When Will and Carlton were on their way to Palm Springs they were?
+  1) Sick
+  2) Arrested - correct
+  3) Beat up
+  4) Cold 
+
+  What is the name of Will's friend who fall's in love with Hilary?
+  1) Ice Cube
+  2) Ice Tray - correct
+  3) Ice Box
+  4) Ice and Coke
+
+  What well known music artist was Carlton famous for dancing to?
+  1) Britney Spears
+  2) J - LO
+  3) Tom Jones - correct
+  4) Queen
+
+  When all the kids go there seperate way's (end of serise) what day does Phillip say he'll call them?
+  1) Monday
+  2) Saturday
+  3) Sunday - correct
+  4) Friday 
+  
   What was kinda weird about Lucielle Ball's pregnancy on I Love Lucy?
   1) The characters acknowleged she was pregnant but weren't allowed to say the word 'pregnant' on air.
   2) The show didn't acknowledge it and just pretended she was gaining wieght.
@@ -28,7 +80,30 @@ CLASSIC TV
   2) Family Matters - Harriot Widnslow
   3) Bewitched - Daren Stevens
   4) Batman (1966) - Catwoman
+  
+  In Sanford and son, what color was Fred's hat that he got for his birthday?
+  1) Grey
+  2) Yellow
+  3) Black
+  4) Lavender
 
+  In Sanford and son, who did Lamont have over to play poker?
+  1) Rooster, Hucklebuck, Skeeter Matthews
+  2) Bubba, Leroy, Skillet
+  3) Melvin,Bubba
+  4) Grady and Skillet
+
+  In Sanford and Son, what drink did Fred have with Betty?
+  1) Boilermakers
+  2) Ripple
+  3) Soda and Ripple
+  4) Wine
+
+  In Sanford and son, what was Goldstein?
+  1) Jewish
+  2) Mexican
+  3) Puerto Rican
+  4) American
 
 FOOD
   Why is foie gras so controversial?
