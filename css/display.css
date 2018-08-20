@@ -7,6 +7,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  margin-bottom: 20px;
 }
 
 .tvScreen {
@@ -23,5 +24,52 @@
 }
 
 .tvScreen p {
+  color: wheat;
+}
+
+.btn {
+  width: 250px;
+  height: 50px;
+  background-color: wheat;
+  margin: 10px;
+  border-radius: 5px; 
+  margin-bottom: 20px;
+}
+
+.btn:hover {
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.column {
+  display: inline-block;
+}
+
+.answerSection {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center; 
+  border: 4px solid wheat;
+  border-radius: 5px; 
+  padding: 20px;
+}
+
+.playerCards {
+  margin-top: 20px;
+  width: 100%;
+  height: 200px;
+  border: 2px solid wheat;
+}
+
+footer {
+  margin: 20px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+footer a {
+  text-decoration: none;
+  font-size: 20px;
   color: wheat;
 }
