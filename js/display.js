@@ -1,11 +1,13 @@
-var activePlayer = 1;
+var activePlayer = 0;
+var pickedPlayer = 0;
 
 // generate player boxes
 var playerScoreArea = document.getElementById('player-score-area');
 var playerData = JSON.parse(localStorage.getItem('playerArr'));
+var playerBoxArray = [];
 
-playerData.forEach(function(player) {
-  new Player(player);
+playerData.forEach(function(player, i) {
+  new Player(player, i);
 });
 
 playerArr.forEach(function(player) {
@@ -20,9 +22,18 @@ playerArr.forEach(function(player) {
   newDiv.appendChild(newH3);
   newDiv.appendChild(newP);
   playerScoreArea.appendChild(newDiv);
+  playerBoxArray.push(newDiv);
+  checkStatus();
 });
 
-// 
+function checkStatus() {
+  playerBoxArray.forEach(function(playerBox) {
+    playerBox.classList.remove('active-player');
+    playerBox.classList.remove('picked-player');
+  });
+  playerBoxArray[activePlayer].classList.add('active-player');
+  playerBoxArray[pickedPlayer].classList.add('picked-player');
+}
 
 // get questions
 var questionText = document.getElementById('question-text');
@@ -56,13 +67,19 @@ function createPickerButton(question) {
     newDiv.classList.add('individual-answers');
     var newP = document.createElement('p');
     newDiv.classList.add('small-answer-text');
-    newP.innerText = `Make ${playerData[i]} answer.`;
+    newP.innerText = i === activePlayer ? 'I\'ll answer.' : `Make ${playerData[i]} answer.`;
     newDiv.appendChild(newP);
     answerDiv.appendChild(newDiv);
-    newDiv.addEventListener('click', function() {
-      displayQuestion(question);
-    });
+    pickPlayerEvent(newDiv, question, i);
   }
+}
+
+function pickPlayerEvent(newDiv, question, i) {
+  newDiv.addEventListener('click', function() {
+    pickedPlayer = i;
+    checkStatus();
+    displayQuestion(question);
+  });
 }
 
 function displayQuestion(question) {
