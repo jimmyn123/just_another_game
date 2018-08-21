@@ -1,5 +1,8 @@
 body {
   background-color: #001a44;
+  color: #46aeda;
+  font-family: 'Baloo Bhai', sans-serif;
+  font-size: 1.5em;
 }
 
 .display-main {
@@ -22,4 +25,158 @@ div {
   margin: 5px auto;
   min-height: 50px;
   width: 95%;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  background-color: #001a44;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+}
+
+.timer {
+  height: 100px;
+  width: 150px; 
+  background-color: red;
+  position: relative;
+}
+
+.sample-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+
+.sample-div img {
+  width: 150px;
+  height: 150px;
+}
+
+.sample-div h2 {
+  display: flex;
+  margin-top: 20px;
+  font-size: 2.5em;
+  justify-content: center;
+  align-items: center;
+}
+section .over-lay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #efe140;
+  color: whitesmoke;
+  border: 10px solid #001a44;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 150px;
+  height: 70px;
+  font-size: 2.5em;
+}
+
+display.split.right {
+  position: relative;
+} 
+
+
+
+.title-div {
+  height: 15%;
+  background-color: #001a44;
+  color: #46aeda;
+}
+
+.score-div {
+  height: 30%;
+  background-color: #001a44;
+}
+
+.no-padding {
+  margin: 0px 0px 5px auto;
+}
+
+.title-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.question-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 20%;
+  background-color: #001a44;
+}
+
+.question-div p {
+  margin: 0;
+}
+
+.yellow {
+  color: #efe140;
+}
+
+.answer-div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+  background-color: #001a44;
+}
+
+.individual-answers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 10%;
+  color: #001a44;
+}
+
+.individual-answers:hover {
+  background-color: #efe140;
+}
+
+.score-div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  height: 25%;
+  border-top: 2px solid #46aeda;
+  background-color: #001a44;
+}
+
+.player {
+  height: 100%;
+  text-align: center;
+  background-color: #001a44;
+}
+
+.white-smoke {
+  color: whitesmoke;
 }
