@@ -96,8 +96,6 @@ display.split.right {
   position: relative;
 } 
 
-
-
 .title-div {
   height: 15%;
   background-color: #001a44;
@@ -142,8 +140,7 @@ display.split.right {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  height: 40%;
+  height: 25%;
   background-color: #001a44;
 }
 
@@ -190,4 +187,16 @@ display.split.right {
 
 .white-smoke {
   color: whitesmoke;
+}
+
+.player-select {
+  background-color: #001a44;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.player-select p {
+  text-align: center;
+  width: 40%;
 }
