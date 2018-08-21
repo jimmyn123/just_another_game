@@ -1,4 +1,4 @@
-body{
+body {
     background-color: #001a44;
     color: #46aeda;
     text-align: center;
@@ -7,19 +7,17 @@ body{
     font-family: 'Baloo Bhai', sans-serif;
 }
 
-h1{
+h1 {
     font-size: 4em;
     padding: 20px;
-    
-
 }
 
-h2{
+h2 {
     padding: 10px;
     font-size: 1.5em;
 }
 
-.playerControl{
+.playerControl {
     padding-top: 10px;
     display: flex; 
     justify-content: space-evenly;
@@ -28,7 +26,7 @@ h2{
     font-size: 3em;
 }
 
-.playerControl button{
+.playerControl button {
     width: 50px;
     height: 50px;
     border-radius: 25px;
@@ -36,24 +34,24 @@ h2{
     line-height: 0.8px;
 }
 
-form input{
+form input {
     display: block;
     width: 30%;
     margin: 15px auto;
     font-size: 1.5em;
 }
 
-#start-button{
+#start-button {
     font-size: 2em;
     width: 80%;
 }
 
-button:hover{
+button:hover {
     cursor: pointer;
     background-color: #efe140;
 }
 
-a{
+a {
     font-size: 2em;
     font-family: monospace;
     display: block;
@@ -61,8 +59,16 @@ a{
     color: #46aeda;
 }
 
-a:hover{
+a:hover {
     color: red; 
 }
 
+footer a {
+    display: inline-block;
+}
 
+.how-to-play p {
+    font-family: 'Arvo', serif;
+    font-size: 1.3em;
+    margin: 15px;
+}
