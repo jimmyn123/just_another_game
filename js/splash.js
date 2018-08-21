@@ -70,7 +70,7 @@ startButton.addEventListener('click', function() {
   if (isValid) {
     var stringifiedArray = JSON.stringify(userNamesArray);
     localStorage.setItem('playerArr', stringifiedArray);
-    // window.location = 'views/display.html';
+    window.location = 'views/display.html';
   } else {
     var validation = document.getElementById('validation');
     validation.textContent ='One or more of your names were invalid so here are some names we like!';
