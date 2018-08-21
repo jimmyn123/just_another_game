@@ -79,7 +79,7 @@ section .over-lay {
   justify-content: center;
   align-items: center;
   background-color: #efe140;
-  color: whitesmoke;
+  color: black;
   border: 10px solid #001a44;
   position: absolute;
   top: 0;
@@ -139,7 +139,7 @@ display.split.right {
 
 .answer-div {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -152,12 +152,23 @@ display.split.right {
   justify-content: center;
   align-items: center;
   width: 40%;
-  height: 10%;
+  /* height: 10%; */
+  padding: 7px;
   color: #001a44;
+}
+
+.individual-answers p {
+  margin: 0;
+  font-size: 1.1em;
+}
+
+.small-answer-text {
+  font-size: 0.7em;
 }
 
 .individual-answers:hover {
   background-color: #efe140;
+  cursor: pointer;
 }
 
 .score-div {
