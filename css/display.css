@@ -175,6 +175,7 @@ display.split.right {
   justify-content: space-around;
   align-items: center;
   height: 25%;
+  padding-top: 10px;
   border-top: 2px solid #46aeda;
   background-color: #001a44;
 }
@@ -199,4 +200,12 @@ display.split.right {
 .player-select p {
   text-align: center;
   width: 40%;
+}
+
+.active-player {
+  border: #efe140 5px solid;
+}
+
+.picked-player h3 {
+  color: red;
 }

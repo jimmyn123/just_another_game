@@ -1,0 +1,35 @@
+body {
+    background-color: #001a44;
+}
+
+h1{
+    font-family: 'Baloo Bhai', sans-serif; 
+    font-size: 4em; 
+    text-align: center;
+    padding: 50px;
+    color: #46aeda;
+}
+
+container{
+    display: flex; flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 25px;
+}
+
+p{
+    height: 350px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #46aeda
+    
+}
+
+div{
+    height: 450px;
+    width: 200px;
+    color: #46aeda;
+}
+
+.image{
+    width: 200px;
+}
