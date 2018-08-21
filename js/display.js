@@ -1,5 +1,15 @@
 var activePlayer = 0;
 var pickedPlayer = 0;
+var turnsRemaining = 4;
+
+// set turn remainging
+var turnsRemainingTag = document.getElementById('turns-remaining');
+turnsRemainingTag.innerText = turnsRemaining;
+
+function decrementTurns() {
+  turnsRemaining--;
+  turnsRemainingTag.innerText = turnsRemaining;
+}
 
 // generate player boxes
 var playerScoreArea = document.getElementById('player-score-area');
@@ -104,7 +114,19 @@ function populateAnswers(answers) {
     newPTag.innerText = answers[answerIndex];
     newAnswer.appendChild(newPTag);
     answerDiv.appendChild(newAnswer);
+    newAnswer.addEventListener('click', function() {
+      selectAnswer('a', 'b');
+    });
   }
+}
+
+function selectAnswer(pickedAnswer, correctAnswer) {
+  activePlayer++;
+  activePlayer = activePlayer % playerArr.length;
+  pickedPlayer = activePlayer;
+  decrementTurns();
+  checkStatus();
+  getRandomQuestion();
 }
 
 // dynamically set the font size for lengthier answers
