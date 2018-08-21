@@ -51,7 +51,7 @@ startButton.addEventListener('click', function() {
   var nameInputs = document.getElementsByTagName('input');
   for (var i = 0; i < nameInputs.length; i++) {
     if (!nameInputs[i].value) {
-      alert('How hard can it be to make up a name. Here, I\'ll pick one for you.');
+      //alert('How hard can it be to make up a name. Here, I\'ll pick one for you.');
       var rando = Math.floor(Math.random() * defaultNames.length);
       nameInputs[i].value = defaultNames[rando];
       isValid = false;
@@ -66,6 +66,11 @@ startButton.addEventListener('click', function() {
     var stringifiedArray = JSON.stringify(userNamesArray);
     localStorage.setItem('playerArr', stringifiedArray);
     window.location = 'views/display.html';
+  }
+  else{
+    var validation = document.getElementById('validation');
+    validation.textContent ='One of your names were invalid! We might have changed it for you!';
+    
   }
 });
 
