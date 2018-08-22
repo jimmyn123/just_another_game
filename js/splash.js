@@ -63,7 +63,6 @@ startButton.addEventListener('click', function() {
       if (userNamesArray.includes(name)) {
         name = `${name}${i + 1}`;
       }
-      console.log(name);
       userNamesArray.push(name);
     }
   }
