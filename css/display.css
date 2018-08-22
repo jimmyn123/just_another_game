@@ -136,6 +136,11 @@ display.split.right {
   margin: 0;
 }
 
+.font-size {
+  font-size: 3em;
+  margin-bottom: 0;
+}
+
 .yellow {
   color: #efe140;
 }
@@ -159,11 +164,13 @@ display.split.right {
   /* height: 10%; */
   padding: 7px;
   color: #001a44;
+  border-radius: 10px;
 }
 
 .individual-answers p {
   margin: 0;
   font-size: 1.1em;
+  text-align: center;
 }
 
 .small-answer-text {
@@ -191,6 +198,7 @@ display.split.right {
   width: 95%;
   text-align: center;
   background-color: #001a44;
+  border-radius: 10px;
 }
 
 .white-smoke {
