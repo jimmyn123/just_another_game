@@ -218,12 +218,13 @@ display.split.right {
   width: 40%;
 }
 
-.active-player {
-  border: #efe140 5px solid;
+.active-player h3 {
+  color: red;
 }
 
-.picked-player h3 {
-  color: red;
+.picked-player {
+  border: #efe140 5px solid;
+  background-color: #46aeda;
 }
 
 .correct-response {
