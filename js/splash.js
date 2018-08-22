@@ -39,6 +39,7 @@ function playerInputHandler() {
   }
   for (var i = 0; i < numberOfPlayers; i++) {
     var newPlayerInput = document.createElement('input');
+    newPlayerInput.classList.add('newPlayerAppend');
     newPlayerInput.setAttribute('type', 'text');
     playerForm.appendChild(newPlayerInput);
   }
