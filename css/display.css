@@ -147,6 +147,8 @@ display.split.right {
   justify-content: center;
   height: 25%;
   background-color: #001a44;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #46aeda;
 }
 
 .individual-answers {
@@ -176,17 +178,17 @@ display.split.right {
 .score-div {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 95%;
   justify-content: space-around;
   align-items: center;
   height: 25%;
   padding-top: 10px;
-  border-top: 2px solid #46aeda;
   background-color: #001a44;
 }
 
 .player {
   height: 100%;
+  width: 95%;
   text-align: center;
   background-color: #001a44;
 }

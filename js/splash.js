@@ -7,11 +7,11 @@ var playerForm = document.getElementById('player-form');
 var startButton = document.getElementById('start-button');
 
 var defaultNames = [
-  'PoppinFresh',
+  'PopNFresh',
   'ButterCup',
   'DeadSkunk',
   'LadyHaha',
-  'SirWillipsBrightslymore',
+  'Willip',
   'Flappy',
   'Snookums',
   'Chauncy'
@@ -52,7 +52,7 @@ function submitUserNames() {
   var nameInputs = document.getElementsByTagName('input');
   for (var i = 0; i < nameInputs.length; i++) {
     var name = nameInputs[i].value;
-    if (reg.test(name) || !name) {
+    if (reg.test(name) || !name || name.length > 9) {
       var rando = Math.floor(Math.random() * defaultNames.length);
       while (userNamesArray.includes(defaultNames[rando])) {
         rando = Math.floor(Math.random() * defaultNames.length);
