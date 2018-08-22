@@ -5,25 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
+  <link rel="stylesheet" href="../css/loser.css">
 </head>
 <body>
-  <h1 id="name"></h1>
-  <script>
-    var h1 = document.getElementById('name');
-    var loser = JSON.parse(localStorage.getItem('loser'));
-    var numberOfPlayers = parseInt(localStorage.getItem('totalPlayers'));
-    console.log(loser.length);
-    var names = '';
-    loser.forEach(function(loser) {
-      names += loser.name + ' '
-    });
-    if (numberOfPlayers === loser.length) {
-      h1.innerText = 'EVERYBODY LOSES!!!!';
-    } else if (loser.length > 1) {
-      h1.innerText = `Today\'s losers: ${names}`;
-    } else {
-      h1.innerText = `Today\'s loser is ${names}`;
-    }
-  </script>
+  <main>
+    <p>Player 1, Remember today...</p>
+    <p class="align-right">It is the day you have lost!</p>
+    <p>You Got Played!!!</p>
+    <p class="align-center">Congratulations?</p>
+    <a href="../index.html" class="play-again">Play Again?</a>
+    <p class="credit-p"><a href="about.html" class="credit-link">Credits</a></p>
+  </main>
+  <script src="../js/loser.js"></script>
 </body>
 </html>

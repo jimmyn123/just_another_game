@@ -1,0 +1,56 @@
+main {
+  background-color: #001a44;
+  color: #46aeda;
+  font-family: 'Baloo Bhai', sans-serif;
+  font-size: 4em;
+  height: 100vh;
+}
+
+main p {
+  padding: 5px 10%;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-center {
+  color: green;
+  padding-top: 125px;
+  text-align: center;
+}
+
+.play-again {
+  background-color: black;
+  border: #efe140 3px solid;
+  border-radius: 15px;
+  color: #efe140;
+  display: block;
+  font-size: 0.8em;
+  margin: 5px auto;
+  padding: 4px;
+  text-align: center;
+  text-decoration: none;
+  width: 40%;
+}
+
+.play-again:hover {
+  background-color: #efe140;
+  border: #001a44 3px solid;
+  color: #001a44;
+  cursor: pointer;
+}
+
+.credit-p {
+  position: fixed;
+  bottom: 0;
+}
+
+.credit-link {
+  color: red;
+  text-decoration: none;
+}
+
+.credit-link:hover {
+  color: #efe140;
+}
