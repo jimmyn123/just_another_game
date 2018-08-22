@@ -3,7 +3,7 @@ body {
     color: #46aeda;
     text-align: center;
     width: 960px;
-    margin: 0 auto;
+    margin: 100px auto;
     font-family: 'Baloo Bhai', sans-serif;
 }
 
@@ -97,6 +97,7 @@ input[type=text]:focus {
 }
 
 button {
+    border-radius: 10px;
     display: inline-block;
     border: none;
     padding: 1rem 2rem;
@@ -131,4 +132,9 @@ button:active {
 
 i {
     color: #efe140
+}
+
+footer a {
+    font-family: monospace;
+    color: #efe140;
 }
