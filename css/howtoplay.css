@@ -11,7 +11,7 @@ body {
     font-family: arial, sans-serif;
     font-size: 12px;
     margin: 0 auto;
-    background: #001a44;
+    background: #46aeda;
     color: #fff;
 }
 
@@ -139,7 +139,20 @@ ul li a {
 
 .font {
     font-family: 'Baloo Bhai', sans-serif;
-    color: #46aeda;
+    color: whitesmoke;
+}
+
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.back {
+    color: #001a44;
+    font-family: monospace;
+    font-size: 2em;
+    text-decoration: none;
 }
 
 

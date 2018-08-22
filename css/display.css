@@ -5,6 +5,10 @@ body {
   font-size: 1.5em;
 }
 
+h1 {
+  color: #efe140;
+}
+
 .hidden {
   display: none;
 }
@@ -142,7 +146,7 @@ display.split.right {
 }
 
 .yellow {
-  color: #efe140;
+  color: #46aeda;
 }
 
 .answer-div {
@@ -170,7 +174,7 @@ display.split.right {
 
 .individual-answers p {
   margin: 0;
-  font-size: 1.1em;
+  font-size: 1.2em;
   text-align: center;
 }
 
@@ -195,7 +199,7 @@ display.split.right {
 }
 
 .player {
-  height: 100%;
+  height: 85%;
   width: 95%;
   text-align: center;
   background-color: #001a44;
@@ -224,7 +228,7 @@ display.split.right {
 
 .picked-player {
   border: #efe140 5px solid;
-  background-color: #46aeda;
+  background-color: #E3CE63;
 }
 
 .correct-response {
