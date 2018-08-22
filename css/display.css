@@ -5,6 +5,10 @@ body {
   font-size: 1.5em;
 }
 
+.hidden {
+  display: none;
+}
+
 .display-main {
   display: flex;
   flex-direction: row;
@@ -56,6 +60,7 @@ div {
 
 .sample-div {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -208,4 +213,24 @@ display.split.right {
 
 .picked-player h3 {
   color: red;
+}
+
+.correct-response {
+  color: green;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+.wrong-response {
+  color: red;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+.continue {
+  background-color: #efe140;
+  border: #001a44 2px solid;
+  border-radius: 10px;
+  color: #001a44;
+  text-align: center;
 }

@@ -1,6 +1,14 @@
+var playerScoreArea = document.getElementById('player-score-area');
+var playerData = JSON.parse(localStorage.getItem('playerArr'));
+var playerBoxArray = [];
 var activePlayer = 0;
 var pickedPlayer = 0;
 var turnsRemaining = 4;
+var questionText = document.getElementById('question-text');
+var questionHead = document.getElementById('question-head');
+var answerDiv = document.getElementById('answer-div');
+var questionPool = [];
+var usedQuestions = [];
 
 // set turn remainging
 var turnsRemainingTag = document.getElementById('turns-remaining');
@@ -12,10 +20,6 @@ function decrementTurns() {
 }
 
 // generate player boxes
-var playerScoreArea = document.getElementById('player-score-area');
-var playerData = JSON.parse(localStorage.getItem('playerArr'));
-var playerBoxArray = [];
-
 playerData.forEach(function(player, i) {
   new Player(player, i);
 });
@@ -46,12 +50,6 @@ function checkStatus() {
 }
 
 // get questions
-var questionText = document.getElementById('question-text');
-var questionHead = document.getElementById('question-head');
-var answerDiv = document.getElementById('answer-div');
-var questionPool = [];
-var usedQuestions = [];
-
 function getRandomQuestion() {
   var qNum = Math.floor(Math.random() * allQuestions.length);
   while (usedQuestions.includes(qNum)) {
@@ -114,13 +112,58 @@ function populateAnswers(answers) {
     newPTag.innerText = answers[answerIndex];
     newAnswer.appendChild(newPTag);
     answerDiv.appendChild(newAnswer);
-    newAnswer.addEventListener('click', function() {
-      selectAnswer('a', 'b');
-    });
+    selectAnswerEvent(newAnswer, answers[answerIndex], answers[0]);
   }
 }
 
+function selectAnswerEvent(div, currentAnswer, correctAnswer) {
+  div.addEventListener('click', function() {
+    selectAnswer(currentAnswer, correctAnswer);
+  });
+}
+
 function selectAnswer(pickedAnswer, correctAnswer) {
+  clearAnswers();
+  var isCorrect;
+  if (pickedAnswer === correctAnswer) {
+    questionHead.classList.add('correct-response');
+    questionHead.innerText = 'CORRECT!!';
+    questionText.innerText = 'Way to go!';
+    isCorrect = true;
+  } else {
+    questionHead.classList.add('wrong-response');
+    questionHead.innerText = 'WRONG!!!';
+    questionText.innerText = 'I feel bad for you.';
+    isCorrect = false;
+  }
+  updateScores(isCorrect);
+  var continueBtn = document.createElement('div');
+  continueBtn.classList.add('individual-answers');
+  var newP = document.createElement('p');
+  newP.innerText = 'Click me to continue.';
+  continueBtn.appendChild(newP);
+  answerDiv.appendChild(continueBtn);
+  advanceTurnEvent(continueBtn);
+}
+
+function advanceTurnEvent(div) {
+  div.addEventListener('click', function() {
+    advanceTurn();
+  });
+}
+
+function updateScores(isCorrect) {
+  if (isCorrect) {
+    if (pickedPlayer !== activePlayer) { playerArr[activePlayer].score -= 200; }
+  } else {
+    playerArr[pickedPlayer].score -= 100;
+  }
+  console.log(playerArr);
+}
+
+function advanceTurn() {
+  questionHead.classList.remove('correct-response');
+  questionHead.classList.remove('wrong-response');
   activePlayer++;
   activePlayer = activePlayer % playerArr.length;
   pickedPlayer = activePlayer;
