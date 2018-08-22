@@ -161,10 +161,11 @@ display.split.right {
   justify-content: center;
   align-items: center;
   width: 40%;
-  /* height: 10%; */
+  height: 40%;
   padding: 7px;
   color: #001a44;
   border-radius: 10px;
+  
 }
 
 .individual-answers p {

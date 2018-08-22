@@ -142,7 +142,7 @@ function selectAnswer(pickedAnswer, correctAnswer) {
   var continueBtn = document.createElement('div');
   continueBtn.classList.add('individual-answers');
   var newP = document.createElement('p');
-  newP.innerText = 'Click me to continue.';
+  newP.innerText = 'Continue';
   continueBtn.appendChild(newP);
   answerDiv.appendChild(continueBtn);
   advanceTurnEvent(continueBtn);
