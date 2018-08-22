@@ -33,7 +33,7 @@ playerArr.forEach(function(player) {
 });
 
 // set turn remainging
-turnsRemaining = playerArr.length === 3 ? 2 : 8;
+turnsRemaining = playerArr.length === 3 ? 9 : 8;
 var turnsRemainingTag = document.getElementById('turns-remaining');
 turnsRemainingTag.innerText = turnsRemaining;
 
