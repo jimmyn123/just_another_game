@@ -44,7 +44,7 @@ function playerInputHandler() {
   }
 }
 
-startButton.addEventListener('click', function() {
+function submitUserNames() {
   var reg = /\s/;
   var isValid = true;
   var userNamesArray = [];
@@ -74,6 +74,11 @@ startButton.addEventListener('click', function() {
     var validation = document.getElementById('validation');
     validation.textContent ='One or more of your names were invalid so here are some names we like!';
   }
+}
+
+startButton.addEventListener('click', function() {
+  submitUserNames();
 });
+
 
 playerInputHandler();

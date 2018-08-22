@@ -43,7 +43,7 @@ form input {
 
 #start-button {
     font-size: 2em;
-    width: 80%;
+    width: 40%;
 }
 
 button:hover {
@@ -57,10 +57,12 @@ a {
     display: block;
     padding: 20px;
     color: #46aeda;
+    text-decoration: none;
 }
 
 a:hover {
-    color: red; 
+    color: red;
+    text-decoration: underline; 
 }
 
 footer a {
@@ -71,4 +73,61 @@ footer a {
     font-family: 'Arvo', serif;
     font-size: 1.3em;
     margin: 15px;
+}
+
+header h1 {
+    font-size: 6em;
+    color: #efe140;
+}
+
+
+/* exp */
+input[type=text] {
+    width: 40%;
+    margin-top: 20px;
+    padding: 15px 22px;
+    /* margin: 10px 5px; */
+    text-align: center;
+    box-sizing: border-box;  
+}
+
+input[type=text]:focus {
+    border: 5px solid red; 
+}
+
+button {
+    display: inline-block;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 0;
+    text-decoration: none;
+    background: #0069ed;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin-bottom: 20px;
+}
+
+button:hover,
+button:focus {
+    background: #0053ba;
+}
+
+button:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
+i {
+    color: #efe140
 }
