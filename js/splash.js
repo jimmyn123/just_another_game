@@ -58,6 +58,7 @@ function submitUserNames() {
         rando = Math.floor(Math.random() * defaultNames.length);
       }
       name = defaultNames[rando];
+      nameInputs[i].value = name;
       userNamesArray.push(defaultNames[rando]);
       isValid = false;
     } else {
