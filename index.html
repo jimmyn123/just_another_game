@@ -6,14 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Just Another Game</title>
   <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
+  <script src="https://use.fontawesome.com/874039f936.js"></script>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
   <header>
-    <h1>
-      J.A.G: Just Another Game
-    </h1>
+    <h1>J.A.G.</h1>
   </header>
   <main>
     <h2>
@@ -21,17 +20,17 @@
     </h2>
     <div id="validation"></div>
     <div class="playerControl">
-      <button id="decrement-player-button">-</button>
+      <i id="decrement-player-button" class="fa fa-minus-square-o" aria-hidden="true"></i>
       <span id="number-of-players">2</span>
-      <button id="increment-player-button">+</button>
+      <i id="increment-player-button" class="fa fa-plus-square-o" aria-hidden="true"></i>      
     </div>
     <form id="player-form">
     </form>
-    <button id="start-button">Start The Game!</button>
+    <button id="start-button">Start The Game</button>
   </main>
   <footer>
     <a href="views/about.html">Credits</a>
-    <a href="views/howtoplay.html">How To Play</a>
+    <a href="views/howtoplay.html">Rules</a>
   </footer>
   <script src="js/splash.js"></script>
 </body>
