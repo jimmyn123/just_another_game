@@ -29,21 +29,17 @@ CLASSIC TV
   3) New York
   4) Chicago - correct
 
-  Does Bud ever move out and go to college?
-  1) No
-  2) Yes - correct
-
   Where did Will smith move to Bel Air from?
   1) Texas
   2) California
   3) Philadelphia - correct
   4) Florida
 
-  Carlton was famous for being?
-  1) Fat
+  On the Fresh Prince of Bel Air, Carlton was famous for being?
+  1) Short
   2) Thin
   3) Tall
-  4) Short - correct
+  4) Fat
 
   When Will and Carlton were on their way to Palm Springs they were?
   1) Sick

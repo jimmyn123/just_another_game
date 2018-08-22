@@ -3,21 +3,12 @@ var playerData = JSON.parse(localStorage.getItem('playerArr'));
 var playerBoxArray = [];
 var activePlayer = 0;
 var pickedPlayer = 0;
-var turnsRemaining = 4;
+var turnsRemaining;
 var questionText = document.getElementById('question-text');
 var questionHead = document.getElementById('question-head');
 var answerDiv = document.getElementById('answer-div');
-var questionPool = [];
 var usedQuestions = [];
-
-// set turn remainging
-var turnsRemainingTag = document.getElementById('turns-remaining');
-turnsRemainingTag.innerText = turnsRemaining;
-
-function decrementTurns() {
-  turnsRemaining--;
-  turnsRemainingTag.innerText = turnsRemaining;
-}
+var playerScores = [];
 
 // generate player boxes
 playerData.forEach(function(player, i) {
@@ -33,12 +24,23 @@ playerArr.forEach(function(player) {
   var newP = document.createElement('p');
   newP.classList.add('white-smoke');
   newP.innerText = player.score;
+  playerScores.push(newP);
   newDiv.appendChild(newH3);
   newDiv.appendChild(newP);
   playerScoreArea.appendChild(newDiv);
   playerBoxArray.push(newDiv);
   checkStatus();
 });
+
+// set turn remainging
+turnsRemaining = playerArr.length === 3 ? 2 : 8;
+var turnsRemainingTag = document.getElementById('turns-remaining');
+turnsRemainingTag.innerText = turnsRemaining;
+
+function decrementTurns() {
+  turnsRemaining--;
+  turnsRemainingTag.innerText = turnsRemaining;
+}
 
 function checkStatus() {
   playerBoxArray.forEach(function(playerBox) {
@@ -155,10 +157,11 @@ function advanceTurnEvent(div) {
 function updateScores(isCorrect) {
   if (isCorrect) {
     if (pickedPlayer !== activePlayer) { playerArr[activePlayer].score -= 200; }
+    playerScores[activePlayer].innerText = playerArr[activePlayer].score;
   } else {
     playerArr[pickedPlayer].score -= 100;
+    playerScores[pickedPlayer].innerText = playerArr[pickedPlayer].score;
   }
-  console.log(playerArr);
 }
 
 function advanceTurn() {
@@ -168,8 +171,30 @@ function advanceTurn() {
   activePlayer = activePlayer % playerArr.length;
   pickedPlayer = activePlayer;
   decrementTurns();
+  gameOverCheck();
   checkStatus();
   getRandomQuestion();
+}
+
+// check if game ending conditions are met
+function gameOverCheck() {
+  var gameOver = turnsRemaining > 0 ? false : true;
+  var loser = [{ name: 'x', score: '600' }];
+  playerArr.forEach(function(player) {
+    if (player.score < loser[0].score) {
+      loser = [player];
+    } else if (player.score === loser[0].score) {
+      loser.push(player);
+    }
+    if (player.score <= 0) { 
+      gameOver = true;
+    }
+  });
+  if (gameOver) {
+    localStorage.setItem('loser', JSON.stringify(loser));
+    localStorage.setItem('totalPlayers', playerArr.length);
+    window.location = 'loser.html';
+  }
 }
 
 // dynamically set the font size for lengthier answers
