@@ -19,6 +19,8 @@ container{
 p{
     height: 300px;
     padding: 10px;
+    color: black;
+    background-color: white;
     text-align: center;
     border-style: solid;
     border-width: 2px;
