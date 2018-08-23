@@ -58,7 +58,7 @@ div {
 .timer {
   height: 100px;
   width: 150px; 
-  background-color: red;
+  background-color: #C1292E;
   position: relative;
 }
 
@@ -223,22 +223,48 @@ display.split.right {
 }
 
 .active-player h3 {
-  color: red;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    color: #C1292E;
+  }
+  50% {
+    color: black;
+  }
+  100% {
+    color: #C1292E;
+  }
 }
 
 .picked-player {
-  border: #efe140 5px solid;
-  background-color: #E3CE63;
+  animation: flash 0.75s forwards ease;
+}
+
+@keyframes flash {
+  0% {
+    background-color: #001a44;
+    border: #001a44 5px solid;
+  }
+  25% {
+    background-color: #001a44;
+    border: #efe140 5px solid;
+  }
+  100% {
+    background-color: #E3CE63;
+    border: #efe140 5px solid;
+  }
 }
 
 .correct-response {
-  color: green;
+  color: #3A7D44;
   font-size: 1.4em;
   text-align: center;
 }
 
 .wrong-response {
-  color: red;
+  color: #C1292E;
   font-size: 1.4em;
   text-align: center;
 }
@@ -249,4 +275,19 @@ display.split.right {
   border-radius: 10px;
   color: #001a44;
   text-align: center;
+}
+
+.question-div {
+  animation: card-spin 1s forwards ease;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+}
+
+@keyframes card-spin {
+  0% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(0);
+  }
 }
