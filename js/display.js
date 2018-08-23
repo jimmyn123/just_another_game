@@ -169,21 +169,13 @@ function advanceTurnEvent(div) {
 
 function updateScores(isCorrect) {
   if (isCorrect) {
-    if (pickedPlayer !== activePlayer) { 
+    if (pickedPlayer !== activePlayer) {
       playerArr[activePlayer].score -= 200;
       playerScores[activePlayer].innerText = playerArr[activePlayer].score;
-      playerScores[activePlayer].classList.add('score-decrement');
-      setTimeout(function() {
-        playerScores[activePlayer].classList.remove('score-decrement');
-      }, 2000);
     }
   } else {
     playerArr[pickedPlayer].score -= 100;
     playerScores[pickedPlayer].innerText = playerArr[pickedPlayer].score;
-    playerScores[pickedPlayer].classList.add('score-decrement');
-    setTimeout(function() {
-      playerScores[pickedPlayer].classList.remove('score-decrement');
-    }, 2000);
   }
 }
 
