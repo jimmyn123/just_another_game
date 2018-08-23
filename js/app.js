@@ -1,3 +1,5 @@
+'use strict';
+
 // Constructor for Player object which gets pushed to playerArr
 var playerArr = [];
 
@@ -108,5 +110,205 @@ var allQuestions = [
       '"We\'ll always have Paris."'
     ],
     category: 'Classic Movies'
+  },
+  {
+    question: 'Who are the dynamic duo who created Batman?',
+    answers: [
+      'Bob Kane and Bill Finger',
+      'Kevin Eastman and Peter Laird',
+      'Jerry Siegel and Joe Shuster',
+      'Todd McFarlane and Rob Liefeld'
+    ],
+    category: 'Comics'
+  },
+  {
+    question: 'Besides Mortal Kombat, what video game drew ire from the US government that lead to the establishment of the ESRB?',
+    answers: [
+      'Night Trap',
+      'Street Fighter II',
+      'Killer Instinct',
+      'Double Dragon'
+    ],
+    category: 'Video Games'
+  },
+  {
+    question: 'What movie inexplicably won the Oscar for Best Picture over Citizen Kane in 1942?',
+    answers: [
+      'How Green Was My Valley?',
+      'The Maltese Falcon',
+      'The Grapes of Wrath',
+      'Suspicion'
+    ],
+    category: 'Classic Movies'
+  },
+  {
+    question: 'Sidney Poitier became the first black man to win an Oscar for Best Actor for what film?',
+    answers: [
+      'Lilies of the Field',
+      'Porgy and Bess',
+      'A Raisin in the Sun',
+      'The Defiant Ones'
+    ],
+    category: 'Classic Movies'
+  },
+  {
+    question: 'Who played the titular character in 1931\'s Dracula?',
+    answers: [
+      'Bela Lagosi',
+      'Boris Karloff',
+      'Max Schreck',
+      'John Gilbert'
+    ],
+    category: 'Classic Movies'
+  },
+  {
+    question: 'Which entertainer from the list below has won a Grammy, Oscar, Emmy, and Tony award?',
+    answers: [
+      'Whoopi Goldberg',
+      'Julie Andrews',
+      'Bette Midler',
+      'Cher'
+    ],
+    category: 'Women in Movies'
+  },
+  {
+    question: 'Sofia Coppola has directed several films, including all but which of the following?',
+    answers: [
+      'The Hurt Locker',
+      'The Virgin Suicides',
+      'Lost in Translation',
+      'Marie Antoinette'
+    ],
+    category: 'Women in Movies'
+  },
+  {
+    question: 'Chumbawumba, had a brief run-in with mainstream success with thier 1997 song titled what?',
+    answers: [
+      'Tubthumping',
+      'Tubthumper',
+      'Jumper',
+      'Thubtumper'
+    ],
+    category: '90\'s One-Hit-Wonders'
+  },
+  {
+    question: 'Getting a huge boost from Mya and Ol\' Dirty Bastard, what was the name of Pras\' one big hit?',
+    answers: [
+      'Ghetto Superstar',
+      'Blue Angels',
+      'Deja Vu',
+      'Avenues'
+    ],
+    category: '90\'s One-Hit-Wonders'
+  },
+  {
+    question: 'Which one-hit-wonder\'s one hit was the theme to the sitcom Friends?',
+    answers: [
+      'The Rembrandts',
+      'Deep Blue Something',
+      'The Verve Pipe',
+      'The Breeders'
+    ],
+    category: '90\'s One-Hit-Wonders'
+  },
+  {
+    question: 'Covered by Phil Collins in 1982, what group released "You Can\'t Hurry Love" in 1966?',
+    answers: [
+      'The Supremes',
+      'The Ronettes',
+      'The Shirellas',
+      'The Byrds'
+    ],
+    category: '60\'s Music'
+  },
+  {
+    question: 'Since establishing themselves in 1961, The Temptations have seen a number of singers come and go. Who was the first to leave the group?',
+    answers: [
+      'Elbridge "Al" Bryant',
+      'David Ruffin',
+      'Eddie Kendricks',
+      'Dennis Edwards'
+    ],
+    category: '60\'s Music'
+  },
+  {
+    question: 'Which of the following animated shows was NOT a spin-off?',
+    answers: [
+      'King of the Hill',
+      'The Simpsons',
+      'Bevis and Butt-Head',
+      'Daria'
+    ],
+    category: 'Cartoons'
+  },
+  {
+    question: 'What was the title to the opening theme to the anime Cowboy Bebop?',
+    answers: [
+      'Tank!',
+      'The Real Folk Blues',
+      'Freckles',
+      'Cats on Mars'
+    ],
+    category: 'Cartoons'
+  },
+  {
+    question: 'Who voiced Winston Zeddemore in the first three seasons of The Real Ghostbusters?',
+    answers: [
+      'Arsenio Hall',
+      'Ernie Hudson',
+      'Arthur Burghardt',
+      'LeVar Burton'
+    ],
+    category: 'Cartoons'
+  },
+  {
+    question: 'Which character is NOT voiced by Billy West?',
+    answers: [
+      'Rocco from Rocco\'s Modern Life',
+      'Philip Fry from Futurama',
+      'Stimpy from Ren and Stimpy',
+      'Doug from Nickelodeon\'s Doug'
+    ],
+    category: 'Cartoons'
+  },
+  {
+    question: 'What was the name of the fighting game staring a basketball player released in the 90s?',
+    answers: [
+      'Shaq Fu',
+      'Micheal Jordan in the Windy City',
+      'Barkley\'s Shut Up and Fight',
+      'Killer Instinct w/ Dennis Rodman'
+    ],
+    category: 'Video Games'
+  },
+  {
+    question: 'Which Star Trek TOS cast member never appeared in an epsiode of Star Trek: TNG?',
+    answers: [
+      'George Takei',
+      'Leonard Nemoy',
+      'James Doohan',
+      'DeForest Kelley'
+    ],
+    category: 'Classic TV'
+  },
+  {
+    question: 'Why is foie gras so controversial?',
+    answers: [
+      'It\'s made by force-feeding geese.',
+      'It\'s dolphin.',
+      'It\'s a grain harvested by slave labor.',
+      'It\'s a pork product made from very scared pigs.'
+    ],
+    category: 'Food'
+  },
+  {
+    question: 'Which of the following wasn\'t a spin-off of Happy Days?',
+    answers: [
+      'Love, American Style',
+      'Mork & Mindy',
+      'Laverne and Shirly',
+      'Blansky\'s Beauties'
+    ],
+    category: 'Classic TV'
   }
 ];

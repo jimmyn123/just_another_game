@@ -6,6 +6,8 @@ var turnsRemaining;
 
 // grabbing Id's from display.html file for later use
 var playerScoreArea = document.getElementById('player-score-area');
+'use strict';
+
 var questionText = document.getElementById('question-text');
 var questionHead = document.getElementById('question-head');
 var answerDiv = document.getElementById('answer-div');
@@ -16,12 +18,12 @@ var usedQuestions = [];
 var playerScores = [];
 
 // generate player boxes
-playerData.forEach(function(player) {
+playerData.forEach(function (player) {
   new Player(player);
 });
 
 // creating new class tags in the list of classes for each html propery inside of the div in order to them.
-playerArr.forEach(function(player) {
+playerArr.forEach(function (player) {
   var newDiv = document.createElement('div');
   newDiv.classList.add('player');
   var newH3 = document.createElement('h3');
@@ -53,7 +55,7 @@ function decrementTurns() {
 }
 // updating the status of playerBoxArray by adding and removing classes
 function checkStatus() {
-  playerBoxArray.forEach(function(playerBox) {
+  playerBoxArray.forEach(function (playerBox) {
     playerBox.classList.remove('active-player');
     playerBox.classList.remove('picked-player');
   });
@@ -78,11 +80,11 @@ function getRandomQuestion() {
 
 // clearing answers by removing the firstchild from answerDiv
 function clearAnswers() {
-  while(answerDiv.firstChild) {
+  while (answerDiv.firstChild) {
     answerDiv.removeChild(answerDiv.firstChild);
   }
 }
-
+// creating the content for the answer pickers
 function createPickerButton(question) {
   clearAnswers();
   for (var i = 0; i < playerData.length; i++) {
@@ -90,28 +92,30 @@ function createPickerButton(question) {
     newDiv.classList.add('individual-answers');
     var newP = document.createElement('p');
     newDiv.classList.add('small-answer-text');
+
+    // filling text content for the p tag from playerData
     newP.innerText = i === activePlayer ? 'I\'ll answer.' : `Make ${playerData[i]} answer.`;
     newDiv.appendChild(newP);
     answerDiv.appendChild(newDiv);
     pickPlayerEvent(newDiv, question, i);
   }
 }
-
+// picking new player after question is populated
 function pickPlayerEvent(newDiv, question, i) {
-  newDiv.addEventListener('click', function() {
+  newDiv.addEventListener('click', function () {
     pickedPlayer = i;
     checkStatus();
     displayQuestion(question);
   });
 }
-
+// populating the question element field
 function displayQuestion(question) {
   questionHead.innerText = 'Question:';
   questionText.innerText = question.question;
   populateAnswers(question.answers);
   adjustAnswerText();
 }
-
+// populating answers at random
 function populateAnswers(answers) {
   clearAnswers();
   var scrambledAnswers = [];
@@ -120,6 +124,7 @@ function populateAnswers(answers) {
     while (scrambledAnswers.includes(answerIndex)) {
       answerIndex = Math.floor(Math.random() * answers.length);
     }
+    // creating div and p element to append answers too
     scrambledAnswers.push(answerIndex);
     var newAnswer = document.createElement('div');
     newAnswer.classList.add('individual-answers');
@@ -127,16 +132,17 @@ function populateAnswers(answers) {
     newPTag.innerText = answers[answerIndex];
     newAnswer.appendChild(newPTag);
     answerDiv.appendChild(newAnswer);
+    // calling event listener to select answer
     selectAnswerEvent(newAnswer, answers[answerIndex], answers[0]);
   }
 }
-
+// creating event listener for the answer div
 function selectAnswerEvent(div, currentAnswer, correctAnswer) {
-  div.addEventListener('click', function() {
+  div.addEventListener('click', function () {
     selectAnswer(currentAnswer, correctAnswer);
   });
 }
-
+// looping though possible response based off of click data
 function selectAnswer(pickedAnswer, correctAnswer) {
   clearAnswers();
   var isCorrect;
@@ -151,6 +157,7 @@ function selectAnswer(pickedAnswer, correctAnswer) {
     questionText.innerText = 'I feel bad for you.';
     isCorrect = false;
   }
+  // updating scores is answer is correct and creating continue button
   updateScores(isCorrect);
   var continueBtn = document.createElement('div');
   continueBtn.classList.add('individual-answers');
@@ -162,17 +169,15 @@ function selectAnswer(pickedAnswer, correctAnswer) {
 }
 
 function advanceTurnEvent(div) {
-  div.addEventListener('click', function() {
+  div.addEventListener('click', function () {
     advanceTurn();
   });
 }
 
 function updateScores(isCorrect) {
   if (isCorrect) {
-    if (pickedPlayer !== activePlayer) {
-      playerArr[activePlayer].score -= 200;
-      playerScores[activePlayer].innerText = playerArr[activePlayer].score;
-    }
+    if (pickedPlayer !== activePlayer) { playerArr[activePlayer].score -= 200; }
+    playerScores[activePlayer].innerText = playerArr[activePlayer].score;
   } else {
     playerArr[pickedPlayer].score -= 100;
     playerScores[pickedPlayer].innerText = playerArr[pickedPlayer].score;
@@ -195,7 +200,7 @@ function advanceTurn() {
 function gameOverCheck() {
   var gameOver = turnsRemaining > 0 ? false : true;
   var loser = [{ name: 'x', score: '600' }];
-  playerArr.forEach(function(player) {
+  playerArr.forEach(function (player) {
     if (player.score < loser[0].score) {
       loser = [player];
     } else if (player.score === loser[0].score) {

@@ -1,3 +1,5 @@
+'use strict';
+
 var loser = JSON.parse(localStorage.getItem('loser'));
 var numberOfPlayers = parseInt(localStorage.getItem('totalPlayers'));
 var names = [];

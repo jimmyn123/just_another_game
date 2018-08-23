@@ -5,35 +5,36 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Just Another Game</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="../images/favicon.png">
   <link rel="stylesheet" type="text/css" href="../css/style.css" />
   <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="../css/display.css" />
   
 </head>
 <body>
-  <main class="display-main">
+  <main>
     <section class="display split left">
-      <div class="title-div">
-        <h1 class="font-size">J.A.G.</h1>
-      </div>
+      <h1>J.A.G.</h1>
       <div class="question-div">
-        <p id="question-head" class="white-smoke"></p>
+        <p id="question-head" class="question-head"></p>
         <p id="question-text"></p>
       </div>
       <div class="answer-div" id="answer-div">
         <!-- answers/player options dynamically populate here -->
       </div>
-        <div class="score-div" id="player-score-area"></div>
+        <div class="score-div" id="player-score-area">
+          <!-- player data dynamically populates here -->
+        </div>
       </div>
     </section>
     <section class="display split right">
-      <div class="over-lay">
+      <div class="overlay">
         <p id="turns-remaining"></p>
       </div>
-      <div class="sample-div no-paddings">
-        <h2 class="white-smoke">Turns Remaining</h2>
+      <div class="right-side-div">
+        <h2>Turns Remaining</h2>
       </div>
-      <div class="sample-div">
+      <div class="right-side-div">
         <img src="../images/head.png" alt="head with question mark" />
       </div>
     </section>
