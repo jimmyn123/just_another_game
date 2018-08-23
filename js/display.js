@@ -28,7 +28,6 @@ playerArr.forEach(function (player) {
   newH3.classList.add('yellow');
   newH3.innerText = player.name;
   var newP = document.createElement('p');
-  newP.classList.add('white-smoke');
 
   // setting the text inside of the new p tag to the score of each player,
   // then push thoses scores to the empty array of playerScores.

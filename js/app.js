@@ -10,49 +10,49 @@ function Player(name) {
 // Questions
 var allQuestions = [
   {
-    question: 'What is the answer to this question?',
+    question: 'Who played Rob Petrie\'s wife on The Dick Van Dyke Show?',
     answers: [
-      'This one',
-      'Ozzie Smith',
-      'The Queen of England',
-      'Norman Fell'
+      'Mary Tyler Moore',
+      'Rose Marie',
+      'Elinor Donahue',
+      'Vivian Vance'
     ],
-    category: 'Stuff'
+    category: 'Classic TV'
   },
   {
-    question: 'What the heck are you doing?',
+    question: 'Where did the Fresh Prince of Bel Air move to Bel Air from?',
     answers: [
-      'Nothing',
-      'Yo Momma',
-      'Porn',
-      'Norman Fell'
+      'Philadelphia',
+      'California',
+      'Texas',
+      'Florida'
     ],
-    category: 'That thing you do'
+    category: 'Classic TV'
   },
   {
-    question: 'What is love?',
+    question: 'The Euro-pop dance hit "What is Love" is probably still stuck in your head. Whose fault is that?',
     answers: [
-      'Baby don\'t hurt me',
-      'A many splendored thing',
-      'Like a red red rose',
-      'It makes the world go round'
+      'Haddaway',
+      'Quad City DJs',
+      'C + C Music Factory',
+      'The Baha Men'
     ],
-    category: 'Love'
+    category: '90s One-Hit Wonders'
   },
   {
-    question: 'What is the meaning of life',
+    question: 'In Sgt. Pepper\'s Lonely Hearts Club Band, which Beatle is introduced as Billy Shears?',
     answers: [
-      '42',
-      'Be good and be good at it',
-      'A fat boys',
-      'Ask your doctor or pharmacist'
+      'Ringo',
+      'John',
+      'Paul',
+      'George'
     ],
-    category: 'Life'
+    category: '60\'s Music'
   },
   {
     question: 'Botanically speaking, what is a chili pepper?',
     answers: [
-      'A Berry',
+      'A berry',
       'A vegetable',
       'A legume',
       'A nut'
@@ -62,7 +62,7 @@ var allQuestions = [
   {
     question: 'After helping kids catch Carmen Sandiego, Rockapella performed in commercials for what coffee brand?',
     answers: [
-      'Folgiers',
+      'Folgers',
       'Starbucks',
       'Maxwell House',
       'Eight O\'clock'
@@ -104,7 +104,7 @@ var allQuestions = [
     answers: [
       '"Frankly, my dear, I don\'t give a damn."',
       '"Here\'s looking at you, kid."',
-      '"Louis, I think this is the beginning of a beautiful friendship."',
+      '"...this is the beginning of a beautiful friendship."',
       '"We\'ll always have Paris."'
     ],
     category: 'Classic Movies'

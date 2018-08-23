@@ -145,9 +145,9 @@ display.split.right {
   margin-bottom: 0;
 }
 
-.yellow {
-  color: #46aeda;
-}
+/* .yellow {
+  color: #efe140;
+} */
 
 .answer-div {
   display: flex;
@@ -169,7 +169,18 @@ display.split.right {
   padding: 7px;
   color: #001a44;
   border-radius: 10px;
-  
+  transform-style: preserve-3d;
+  transition: all 0.3s ease-in-out;
+  animation: flip 1s forwards ease;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(0);
+  }
 }
 
 .individual-answers p {
@@ -242,6 +253,11 @@ display.split.right {
   animation: flash 0.75s forwards ease;
 }
 
+.picked-player p {
+  animation: squash 1s ease;
+  color: black;
+}
+
 @keyframes flash {
   0% {
     background-color: #001a44;
@@ -277,17 +293,7 @@ display.split.right {
   text-align: center;
 }
 
-.question-div {
-  animation: card-spin 1s forwards ease;
+.question-div p {
   transform-style: preserve-3d;
   transition: all 1s ease-in-out;
-}
-
-@keyframes card-spin {
-  0% {
-    transform: rotateY(180deg);
-  }
-  100% {
-    transform: rotateY(0);
-  }
 }
