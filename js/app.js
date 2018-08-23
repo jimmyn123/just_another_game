@@ -1,10 +1,9 @@
 // Constructor for Player object which gets pushed to playerArr
 var playerArr = [];
 
-function Player(name, id) {
+function Player(name) {
   this.name = name;
   this.score = 500;
-  this.id = id;
   playerArr.push(this);
 }
 
