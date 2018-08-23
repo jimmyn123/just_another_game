@@ -16,12 +16,12 @@ var usedQuestions = [];
 var playerScores = [];
 
 // generate player boxes
-playerData.forEach(function (player) {
+playerData.forEach(function(player) {
   new Player(player);
 });
 
 // creating new class tags in the list of classes for each html propery inside of the div in order to them.
-playerArr.forEach(function (player) {
+playerArr.forEach(function(player) {
   var newDiv = document.createElement('div');
   newDiv.classList.add('player');
   var newH3 = document.createElement('h3');
@@ -53,7 +53,7 @@ function decrementTurns() {
 }
 // updating the status of playerBoxArray by adding and removing classes
 function checkStatus() {
-  playerBoxArray.forEach(function (playerBox) {
+  playerBoxArray.forEach(function(playerBox) {
     playerBox.classList.remove('active-player');
     playerBox.classList.remove('picked-player');
   });
@@ -78,11 +78,11 @@ function getRandomQuestion() {
 
 // clearing answers by removing the firstchild from answerDiv
 function clearAnswers() {
-  while (answerDiv.firstChild) {
+  while(answerDiv.firstChild) {
     answerDiv.removeChild(answerDiv.firstChild);
   }
 }
-// creating the content for the answer pickers
+
 function createPickerButton(question) {
   clearAnswers();
   for (var i = 0; i < playerData.length; i++) {
@@ -90,17 +90,15 @@ function createPickerButton(question) {
     newDiv.classList.add('individual-answers');
     var newP = document.createElement('p');
     newDiv.classList.add('small-answer-text');
-
-    // filling text content for the p tag from playerData
     newP.innerText = i === activePlayer ? 'I\'ll answer.' : `Make ${playerData[i]} answer.`;
     newDiv.appendChild(newP);
     answerDiv.appendChild(newDiv);
     pickPlayerEvent(newDiv, question, i);
   }
 }
-// picking new player after question is populated
+
 function pickPlayerEvent(newDiv, question, i) {
-  newDiv.addEventListener('click', function () {
+  newDiv.addEventListener('click', function() {
     pickedPlayer = i;
     checkStatus();
     displayQuestion(question);
@@ -134,7 +132,7 @@ function populateAnswers(answers) {
 }
 
 function selectAnswerEvent(div, currentAnswer, correctAnswer) {
-  div.addEventListener('click', function () {
+  div.addEventListener('click', function() {
     selectAnswer(currentAnswer, correctAnswer);
   });
 }
@@ -164,15 +162,17 @@ function selectAnswer(pickedAnswer, correctAnswer) {
 }
 
 function advanceTurnEvent(div) {
-  div.addEventListener('click', function () {
+  div.addEventListener('click', function() {
     advanceTurn();
   });
 }
 
 function updateScores(isCorrect) {
   if (isCorrect) {
-    if (pickedPlayer !== activePlayer) { playerArr[activePlayer].score -= 200; }
-    playerScores[activePlayer].innerText = playerArr[activePlayer].score;
+    if (pickedPlayer !== activePlayer) {
+      playerArr[activePlayer].score -= 200;
+      playerScores[activePlayer].innerText = playerArr[activePlayer].score;
+    }
   } else {
     playerArr[pickedPlayer].score -= 100;
     playerScores[pickedPlayer].innerText = playerArr[pickedPlayer].score;
@@ -195,7 +195,7 @@ function advanceTurn() {
 function gameOverCheck() {
   var gameOver = turnsRemaining > 0 ? false : true;
   var loser = [{ name: 'x', score: '600' }];
-  playerArr.forEach(function (player) {
+  playerArr.forEach(function(player) {
     if (player.score < loser[0].score) {
       loser = [player];
     } else if (player.score === loser[0].score) {
