@@ -296,7 +296,7 @@ var allQuestions = [
     answers: [
       'It\'s made by force-feeding geese.',
       'It\'s dolphin.',
-      'It\'s a grain only harvested in a region with abysmal human rights violations.',
+      'It\'s a grain harvested by slave labor.',
       'It\'s a pork product made from very scared pigs.'
     ],
     category: 'Food'

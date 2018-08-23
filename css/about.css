@@ -34,15 +34,15 @@ h1{
     color: #efe140;
 }
 
-.container{
+.container {
     display: flex; 
     flex-direction: row;
     justify-content: space-evenly;
     padding-top: 25px;
 }
 
-p{
-    height: 30vh;
+p {
+    /* height: 30vh; */
     padding: 10px;
     color: black;
     background-color: white;
@@ -51,16 +51,15 @@ p{
     border-width: 2px;
     border-color: #46aeda;
     border-radius: 10px;
-    
 }
 
-div{
-    height: 350px;
+div {
+    /* height: 350px; */
     width: 200px;
     color: #46aeda;
 }
 
-.image{
+.image {
     width: 100%;
 }
 
