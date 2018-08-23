@@ -2,7 +2,7 @@ body {
     background-color: #001a44;
     color: #46aeda;
     text-align: center;
-    width: 960px;
+    width: 100%;
     margin: 100px auto;
     font-family: 'Baloo Bhai', sans-serif;
 }
@@ -20,7 +20,7 @@ h2 {
 
 .playerControl {
     padding-top: 10px;
-    display: flex; 
+    display: flex;
     justify-content: space-evenly;
     width: 30%;
     margin: 5px auto;
@@ -63,7 +63,7 @@ a {
 
 a:hover {
     color: red;
-    text-decoration: underline; 
+    text-decoration: underline;
 }
 
 footer a {
@@ -81,19 +81,17 @@ header h1 {
     color: #efe140;
 }
 
-
-/* exp */
 input[type=text] {
     width: 40%;
     margin-top: 20px;
     padding: 15px 22px;
     /* margin: 10px 5px; */
     text-align: center;
-    box-sizing: border-box;  
+    box-sizing: border-box;
 }
 
 input[type=text]:focus {
-    border: 5px solid red; 
+    border: 5px solid red;
 }
 
 button {
@@ -109,8 +107,7 @@ button {
     font-size: 1rem;
     cursor: pointer;
     text-align: center;
-    transition: background 250ms ease-in-out, 
-                transform 150ms ease;
+    transition: background 250ms ease-in-out, transform 150ms ease;
     -webkit-appearance: none;
     -moz-appearance: none;
     margin-bottom: 20px;
