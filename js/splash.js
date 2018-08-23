@@ -1,3 +1,5 @@
+'use strict';
+
 // Player form logic
 var numberOfPlayers = 2;
 var numberOfPlayersSpan = document.getElementById('number-of-players');

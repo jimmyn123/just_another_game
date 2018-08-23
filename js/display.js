@@ -6,6 +6,8 @@ var turnsRemaining;
 
 // grabbing Id's from display.html file for later use
 var playerScoreArea = document.getElementById('player-score-area');
+'use strict';
+
 var questionText = document.getElementById('question-text');
 var questionHead = document.getElementById('question-head');
 var answerDiv = document.getElementById('answer-div');

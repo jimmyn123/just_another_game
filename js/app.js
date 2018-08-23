@@ -1,3 +1,5 @@
+'use strict';
+
 // Constructor for Player object which gets pushed to playerArr
 var playerArr = [];
 
