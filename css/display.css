@@ -145,10 +145,6 @@ display.split.right {
   margin-bottom: 0;
 }
 
-/* .yellow {
-  color: #efe140;
-} */
-
 .answer-div {
   display: flex;
   flex-direction: row;
@@ -296,4 +292,44 @@ display.split.right {
 .question-div p {
   transform-style: preserve-3d;
   transition: all 1s ease-in-out;
+}
+
+.score-decrement {
+  animation: ohno 2s linear;
+}
+
+@keyframes ohno {
+  0% {
+    color: #C1292E;
+  }
+  10% {
+    color: black;
+  }
+  20% {
+    color: #C1292E;
+  }
+  30% {
+    color: black;
+  }
+  40% {
+    color: #C1292E;
+  }
+  50% {
+    color: black;
+  }
+  60% {
+    color: #C1292E;
+  }
+  70% {
+    color: black;
+  }
+  80% {
+    color: #C1292E;
+  }
+  90% {
+    color: black;
+  }
+  100% {
+    color: #C1292E;
+  }
 }
