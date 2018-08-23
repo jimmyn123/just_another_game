@@ -1,9 +1,4 @@
 CLASSIC TV
-  Who played Rob Petrie's wife on The Dick Van Dyke Show?
-  1) Mary Tyler Moore
-  2) Rose Marie
-  3) Elinor Donahue
-  4) Vivian Vance
 
   Which of the following wasn't a spin-off of Happy Days?
   1) Love, American Style
@@ -22,18 +17,6 @@ CLASSIC TV
   2) Librarian
   3) Lawyer
   4) Personal Assistant
-
-  Where did the Fresh Prince of Bel Air move to Bel Air from?
-  1) Philadelphia
-  2) California
-  3) Texas
-  4) Florida
-  
-  What was kinda weird about Lucielle Ball's pregnancy on I Love Lucy?
-  1) The characters acknowleged she was pregnant but weren't allowed to say the word 'pregnant' on air.
-  2) The show didn't acknowledge it and just pretended she was gaining wieght.
-  3) Lucy was completely absent from the show while she was pregnant and a whole season of the show aired without her.
-  4) The producer's hired a different actress to play her character during her pregnancy.
 
   Which classic TV character never needed a second actor to play him/her?
   1) The Facts of Life - Edna Garrett
@@ -73,11 +56,6 @@ FOOD
   3) It's a grain only harvested in a region with abysmal human rights violations
   4) It's a pork product produced by traumatizing the pigs before they're killed.
 
-  Botanically speaking, what is a chili pepper?
-  1) A berry
-  2) A vegetable
-  3) A legume
-  4) A nut
 
   What fast-food chain released a video game on the Xbox 360 in which its mascot snuck up on people and gave them food?
   1) Burger King
@@ -91,24 +69,12 @@ FOOD
   3) Lucky Charms
   4) Count Chocula
 
-  Years after helping kids catch Carmen Sandiego, Rockapella performed in commercials for what coffee brand?
-  1) Folgiers
-  2) Starbucks
-  3) Maxwell House
-  4) Eight 0'Clock
-
 COMICS
   Who are the dynamic duo who created Batman?
   1) Bob Kane and Bill Finger
   2) Kevin Eastman and Peter Laird
   3) Jerry Siegel and Joe Shuster
   4) Todd McFarlane and Rob Liefeld
-
-  Which of these characters weren't among the original X-Men.
-  1) Nightcrawler
-  2) Beast
-  3) Angel
-  4) Iceman
 
   What comic publisher features titles such as X-O Manowar, Shadowman, and Bloodshot?
   1) Valiant
@@ -122,18 +88,12 @@ COMICS
   3) Iron Man
   4) Iron Fist
 
-  Wolverine made his first appearance in what comic series?
-  1) The Hulk
-  2) X-Men
-  3) The Avengers
-  4) Alpha Flight
-
 VIDEO GAMES
   The USA got a reskinned game called Mario 2 and not the same Mario 2 Japan got. Why?
   1) Nintendo of America employees thought the game was too hard.
   2) It featured flashing lights that gave some kids seizures.
-  3) It had a suprising amount of dialouge which would have taken too long to localize.
-  4) It required tech the Famicom had that the NES didn't.
+  3) It took too long to localize.
+  4) It required accessories the American NES didn't have.
 
   Besides Mortal Kombat, what video game drew ire from the US government that lead to the establishment of the ESRB?
   1) Night Trap
@@ -153,18 +113,7 @@ VIDEO GAMES
   3) Kentucky Route Zero
   4) Braid
 
-  Which classic puzzle game is the brain child of Alexy Pajitnov?
-  1) Tetris
-  2) Bejeweled
-  3) Myst
-  4) Lemmings
-
 CLASSIC MOVIES
-  Which of the following quotes from AFI's 100 best movie quotes didn't come from Casablanca?
-  1) "Frankly, my dear, I don't give a damn."
-  2) "Here's looking at you, kid."
-  3) "Louis, I think this is the beginning of a beautiful friendship."
-  4) "We'll always have Paris."
 
   What movie inexplicably won the Oscar for Best Picture over Citizen Kane in 1942?
   1) How Green Was My Valley
@@ -234,11 +183,11 @@ WOMEN IN MOVIES
   3) The Verve Pipe
   4) The Breeders
 
-  The Euro-pop dance hit "What is Love" is probably still stuck in your head. Whose fault is that?
-  1) Haddaway
-  2) Quad City DJs
-  3) C + C Music Factory
-  4) The Baha Men
+  
+  1) 
+  2) 
+  3) 
+  4) 
 
   Getting a huge boost by the inclusion of Mya and Ol' Dirty Bastard on the track, what was the name of Pras' one big hit?
   1) Ghetto Superstar
@@ -258,12 +207,6 @@ WOMEN IN MOVIES
   2) The Ronettes
   3) The Shirellas
   4) The Byrds
-
-  In Sgt. Pepper's Lonely Hearts Club Band, which Beatle is introduced as Billy Shears?
-  1) Ringo
-  2) Paul
-  3) John
-  4) George
 
   Which of these songs by Peter, Paul, and Mary wasn't a Bob Dylan cover?
   1) Leaving on a Jet Plane
