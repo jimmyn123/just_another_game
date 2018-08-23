@@ -2,22 +2,35 @@ var loser = JSON.parse(localStorage.getItem('loser'));
 var numberOfPlayers = parseInt(localStorage.getItem('totalPlayers'));
 var names = [];
 var pTags = document.getElementsByTagName('p');
-console.log(loser.length, numberOfPlayers);
-console.log(loser.length === numberOfPlayers);
 
 if (loser.length === numberOfPlayers) {
-  pTags[0].innerText = 'Holy CRAP!';
-  pTags[1].innerText = 'We have a house full of losers today.';
-  pTags[2].innerText = 'Nobody wins!';
+  displayLoser('HOLY CRAP!', 'Everyone\'s a loser today.', 'Nobody wins!!!');
 } else if (loser.length > 1) {
   loser.forEach(function(player) {
     names.push(player.name);
   });
-  pTags[0].innerText = 'Here are today\'s losers:';
-  pTags[1].innerText = names.join(' and ');
-  pTags[2].innerText = 'You can reflect on your failure together.';
+  displayLoser('Here are today\'s losers:', names.join(' and '), 'Reflect on your failure together');
 } else {
-  pTags[0].innerText = `${loser[0].name}, Remember today...`;
-  pTags[1].innerText = 'It is the day you have lost!';
-  pTags[2].innerText = 'You Got Played!!!';
+  displayLoser(`${loser[0].name} remember today...`, 'It is the day you lost!', 'You got Played!!!');
+}
+
+function displayLoser(text1, text2, text3) {
+  setTimeout(function() {
+    pTags[0].classList.remove('hidden');
+    pTags[0].innerText = text1;
+  }, 500);
+  setTimeout(function() {
+    pTags[1].classList.remove('hidden');
+    pTags[1].innerText = text2;
+  }, 2500);
+  setTimeout(function() {
+    pTags[2].classList.remove('hidden');
+    pTags[2].innerText = text3;
+  }, 4500);
+  setTimeout(displayBottomHalf, 6500);
+}
+
+function displayBottomHalf() {
+  var bottomHalf = document.getElementById('bottom-half');
+  bottomHalf.classList.remove('hidden');
 }
