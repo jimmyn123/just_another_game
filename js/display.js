@@ -113,7 +113,7 @@ function displayQuestion(question) {
   populateAnswers(question.answers);
   adjustAnswerText();
 }
-
+// populating answers at random
 function populateAnswers(answers) {
   clearAnswers();
   var scrambledAnswers = [];
@@ -122,6 +122,7 @@ function populateAnswers(answers) {
     while (scrambledAnswers.includes(answerIndex)) {
       answerIndex = Math.floor(Math.random() * answers.length);
     }
+    // creating div and p element to append answers too
     scrambledAnswers.push(answerIndex);
     var newAnswer = document.createElement('div');
     newAnswer.classList.add('individual-answers');
@@ -129,16 +130,17 @@ function populateAnswers(answers) {
     newPTag.innerText = answers[answerIndex];
     newAnswer.appendChild(newPTag);
     answerDiv.appendChild(newAnswer);
+    // calling event listener to select answer
     selectAnswerEvent(newAnswer, answers[answerIndex], answers[0]);
   }
 }
-
+// creating event listener for the answer div
 function selectAnswerEvent(div, currentAnswer, correctAnswer) {
   div.addEventListener('click', function () {
     selectAnswer(currentAnswer, correctAnswer);
   });
 }
-
+// looping though possible response based off of click data
 function selectAnswer(pickedAnswer, correctAnswer) {
   clearAnswers();
   var isCorrect;
@@ -153,6 +155,7 @@ function selectAnswer(pickedAnswer, correctAnswer) {
     questionText.innerText = 'I feel bad for you.';
     isCorrect = false;
   }
+  // updating scores is answer is correct and creating continue button
   updateScores(isCorrect);
   var continueBtn = document.createElement('div');
   continueBtn.classList.add('individual-answers');
