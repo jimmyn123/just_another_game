@@ -20,6 +20,7 @@ playerData.forEach(function(player) {
   new Player(player);
 });
 
+// creating new class tags in the list of classes for each html propery inside of the div in order to them.
 playerArr.forEach(function(player) {
   var newDiv = document.createElement('div');
   newDiv.classList.add('player');
@@ -28,6 +29,10 @@ playerArr.forEach(function(player) {
   newH3.innerText = player.name;
   var newP = document.createElement('p');
   newP.classList.add('white-smoke');
+
+  // setting the text inside of the new p tag to the score of each player,
+  // then push thoses scores to the empty array of playerScores.
+  // lastly appending all knew html properties to the new div
   newP.innerText = player.score;
   playerScores.push(newP);
   newDiv.appendChild(newH3);
@@ -42,11 +47,12 @@ turnsRemaining = playerArr.length === 3 ? 9 : 8;
 var turnsRemainingTag = document.getElementById('turns-remaining');
 turnsRemainingTag.innerText = turnsRemaining;
 
+// function decreases turn
 function decrementTurns() {
   turnsRemaining--;
   turnsRemainingTag.innerText = turnsRemaining;
 }
-
+// updating the status of playerBoxArray by adding and removing classes
 function checkStatus() {
   playerBoxArray.forEach(function(playerBox) {
     playerBox.classList.remove('active-player');
@@ -56,12 +62,14 @@ function checkStatus() {
   playerBoxArray[pickedPlayer].classList.add('picked-player');
 }
 
-// get questions
+// get random questions
 function getRandomQuestion() {
   var qNum = Math.floor(Math.random() * allQuestions.length);
   while (usedQuestions.includes(qNum)) {
     qNum = Math.floor(Math.random() * allQuestions.length);
   }
+
+  // initializing the question process
   var selectedQuestion = allQuestions[qNum];
   usedQuestions.push(qNum);
   questionHead.innerText = 'Here is your next category:';
@@ -69,6 +77,7 @@ function getRandomQuestion() {
   createPickerButton(selectedQuestion);
 }
 
+// clearing answers by removing the firstchild from answerDiv
 function clearAnswers() {
   while(answerDiv.firstChild) {
     answerDiv.removeChild(answerDiv.firstChild);
