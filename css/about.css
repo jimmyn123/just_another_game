@@ -42,7 +42,7 @@ h1{
 }
 
 p{
-    height: 20vh;
+    height: 30vh;
     padding: 10px;
     color: black;
     background-color: white;
@@ -55,22 +55,15 @@ p{
 }
 
 div{
-    height: 450px;
+    height: 350px;
     width: 200px;
     color: #46aeda;
 }
 
 .image{
     width: 100%;
-    /* padding-bottom: 10px; */
 }
 
 .uniform-edit {
     width: 23%;
-}
-
-.Tre img {
-    background-image: url('../images/tre.jpg');
-    background-repeat: no-repeat;
-    background-origin: content-box;
 }
