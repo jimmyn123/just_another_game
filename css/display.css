@@ -4,6 +4,8 @@ body {
   color: #46aeda;
   font-family: 'Baloo Bhai', sans-serif;
   font-size: 1.5em;
+  width: 100%;
+  height: 100%;
 }
 
 h1 {
@@ -15,6 +17,12 @@ h1 {
   text-align: center;
 }
 
+main {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
 .hidden {
   display: none;
 }
@@ -22,8 +30,8 @@ h1 {
 main {
   display: flex;
   flex-direction: row;
-  height: 100vh;
-  max-width: 960px;
+  height: 100%;
+  width: 100%;
 }
 
 .display {
@@ -261,4 +269,18 @@ h2 {
   }
 }
 
+@media only screen and (max-width: 760px)  {
+  /* Styles */
+  main {
+    font-size: 15px;
+  }
 
+  .right {
+    display: none;
+  }
+
+  .left {
+    width: 100%;
+    height: 100%;
+  }
+}
