@@ -6,6 +6,25 @@ main {
   height: 100vh;
 }
 
+.hidden {
+  display: none;
+}
+
+.fade-in-text {
+  animation: appear 2s normal forwards ease-in;
+}
+
+@keyframes appear {
+  0% {
+    font-size: 1.1em;
+    opacity: 0;
+  }
+  100% {
+    font-size: 1em;
+    opacity: 1;
+  }
+}
+
 main p {
   padding: 5px 10%;
 }

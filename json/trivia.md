@@ -23,47 +23,11 @@ CLASSIC TV
   3) Lawyer
   4) Personal Assistant
 
-  Where does the show take place?
-  1) Memphis
-  2) Texas
-  3) New York
-  4) Chicago - correct
-
-  Where did Will smith move to Bel Air from?
-  1) Texas
+  Where did the Fresh Prince of Bel Air move to Bel Air from?
+  1) Philadelphia
   2) California
-  3) Philadelphia - correct
+  3) Texas
   4) Florida
-
-  On the Fresh Prince of Bel Air, Carlton was famous for being?
-  1) Short
-  2) Thin
-  3) Tall
-  4) Fat
-
-  When Will and Carlton were on their way to Palm Springs they were?
-  1) Sick
-  2) Arrested - correct
-  3) Beat up
-  4) Cold 
-
-  What is the name of Will's friend who fall's in love with Hilary?
-  1) Ice Cube
-  2) Ice Tray - correct
-  3) Ice Box
-  4) Ice and Coke
-
-  What well known music artist was Carlton famous for dancing to?
-  1) Britney Spears
-  2) J - LO
-  3) Tom Jones - correct
-  4) Queen
-
-  When all the kids go there seperate way's (end of serise) what day does Phillip say he'll call them?
-  1) Monday
-  2) Saturday
-  3) Sunday - correct
-  4) Friday 
   
   What was kinda weird about Lucielle Ball's pregnancy on I Love Lucy?
   1) The characters acknowleged she was pregnant but weren't allowed to say the word 'pregnant' on air.
@@ -77,6 +41,7 @@ CLASSIC TV
   3) Bewitched - Daren Stevens
   4) Batman (1966) - Catwoman
   
+SANFORD AND SON
   In Sanford and son, what color was Fred's hat that he got for his birthday?
   1) Grey
   2) Yellow
