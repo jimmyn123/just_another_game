@@ -366,7 +366,7 @@ var allQuestions = [
     answers: [
       'Mexico',
       'The United States',
-      'Albany',
+      'Italy',
       'Chile'
     ],
     category: 'Travel'
@@ -392,7 +392,7 @@ var allQuestions = [
     category: 'History'
   },
   {
-    question: 'Which country do kiwifruit originate from?',
+    question: 'Which country does the kiwi fruit originate from?',
     answers: [
       'China',
       'Japan',
