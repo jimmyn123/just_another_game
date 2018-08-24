@@ -310,5 +310,115 @@ var allQuestions = [
       'Blansky\'s Beauties'
     ],
     category: 'Classic TV'
+  },
+  {
+    question: 'What color are aircraft black boxes?',
+    answers: [
+      'Bright Orange',
+      'Black',
+      'Red',
+      'Smoke Black'
+    ],
+    category: 'Travel'
+  },
+  {
+    question: 'In which U.S. state was Tennessee Williams born?',
+    answers: [
+      'Mississippi',
+      'Tennessee',
+      'Alabama',
+      'Texas'
+    ],
+    category: 'People'
+  },
+  {
+    question: 'How long is New Zealand\'s Ninety Mile Beach?',
+    answers: [
+      '55 miles',
+      '90 miles',
+      '80 miles',
+      '70 miles'
+    ],
+    category: 'Travel'
+  },
+  {
+    question: 'What is the main ingredient of Bombay Duck?',
+    answers: [
+      'Fish',
+      'Duck',
+      'Shark',
+      'Chicken'
+    ],
+    category: 'Food'
+  },
+  {
+    question: 'Where did Spanish flu originate?',
+    answers: [
+      'The United States',
+      'Spain',
+      'Mexico',
+      'Portugal'
+    ],
+    category: 'Travel'
+  },
+  {
+    question: 'Which country was the Caesar salad invented in?',
+    answers: [
+      'Mexico',
+      'The United States',
+      'Albany',
+      'Chile'
+    ],
+    category: 'Travel'
+  },
+  {
+    question: 'What nationality was Cleopatra, Queen of Egypt?',
+    answers: [
+      'Greek',
+      'Egyptian',
+      'Mexican',
+      'English'
+    ],
+    category: 'People'
+  },
+  {
+    question: 'How long did the 100 years war last?',
+    answers: [
+      '116',
+      '100',
+      '98',
+      '77'
+    ],
+    category: 'History'
+  },
+  {
+    question: 'Which country do kiwifruit originate from?',
+    answers: [
+      'China',
+      'Japan',
+      'India',
+      'Italy'
+    ],
+    category: 'Food'
+  },
+  {
+    question: 'In which month does the German festival of Oktoberfest mostly take place?',
+    answers: [
+      'September',
+      'November',
+      'January',
+      'October'
+    ],
+    category: 'Travel'
+  },
+  {
+    question: 'What color is a purple finch?',
+    answers: [
+      'Raspberry red',
+      'Purple',
+      'Blue',
+      'Brown'
+    ],
+    category: 'Animals'
   }
 ];
